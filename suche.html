@@ -1678,7 +1678,7 @@
                                                             html += '</p></div></div></div>';
                                                             if (data.sections[i].results[ii].link != undefined) {
                                                                 html += '<div class="highlight-button"><a href="';
-                                                                html += data.sections[i].results[ii].link;
+                                                                html += data.sections[i].results[ii]._raw.landingPageUrl;
                                                                 html += '" class="btn btn-success btn-rounded">Mehr erfahren</a></div>';
                                                             }
                                                             html += '</div>';
