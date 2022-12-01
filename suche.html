@@ -834,6 +834,109 @@
             </div>
             <!-- ======= Info Toggle END ======= -->
         </div>
+        
+
+
+
+
+
+
+
+
+
+    
+    <!-- ANSWERS Depensis -->
+    <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.5.0/dist/svg-pan-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+
+    <script src="https://assets.sitescdn.net/answers/v1/answers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://assets.sitescdn.net/answers/v1/answers.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script>
+        function Answerconfig(){
+
+        };
+
+        function Answeraftersearch(){
+
+        };
+    </script>
+    <style>
+        .yxt-SearchBar-container {
+            color: #ffffff;
+            border: none;
+            background-color: #3C3C3B;
+            border-radius: 35px;
+            box-shadow: 0px 4px 17px rgb(0 0 0 / 25%);
+            z-index: 10;
+        }
+
+        .yxt-SearchBar-button,
+        .yxt-SearchBar-clear {
+            display: unset;
+            color: #ffffff;
+            background-color: unset;
+        }
+
+        .yxt-SearchBar-button:focus,
+        .yxt-SearchBar-clear:focus,
+        .yxt-SearchBar-button:hover,
+        .yxt-SearchBar-clear:hover {
+            background-color: #3BB390;
+        }
+
+        .yxt-AutoComplete-wrapper {
+            background-color: unset;
+        }
+
+        .yxt-AutoComplete-option {
+            color: #ffffff
+        }
+
+        .yxt-AutoComplete:before {
+            background-color: unset;
+        }
+
+        .yxt-AutoComplete-option--item.yxt-selected,
+        .yxt-AutoComplete-option--item:hover {
+            background-color: #3BB390;
+        }
+
+        .highlight-button {
+            text-align: left;
+            height: 25px;
+            margin-top: -25px;
+        }
+
+        .highlight-button .btn {
+            position: absolute;
+            margin-top: -23px;
+            right: 20px;
+        }
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </header><!-- End Header -->
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="big-header d-flex align-items-center justify-content-center">
@@ -1051,16 +1154,6 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.5.0/dist/svg-pan-zoom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-
-
-    <script src="https://assets.sitescdn.net/answers/v1/answers.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://assets.sitescdn.net/answers/v1/answers.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
     <section class="full_grid text-light">
         <!-- Style Wetter -->
         <style>
@@ -1146,30 +1239,8 @@
                 width: 100%;
             }
 
-            .yxt-SearchBar-button:focus,
-            .yxt-SearchBar-clear:focus,
-            .yxt-SearchBar-button:hover,
-            .yxt-SearchBar-clear:hover {
-                background-color: #3BB390;
-            }
-
-            .yxt-SearchBar-container {
-                color: #ffffff;
-                border: none;
-                background-color: #3C3C3B;
-                border-radius: 35px;
-                box-shadow: 0px 4px 17px rgb(0 0 0 / 25%);
-            }
-
             .yxt-SearchBar-input {
                 color: #ffffff;
-            }
-
-            .yxt-SearchBar-button,
-            .yxt-SearchBar-clear {
-                display: unset;
-                color: #ffffff;
-                background-color: unset;
             }
 
             .yxt-SearchBar--hidden {
@@ -1180,52 +1251,22 @@
                 margin-right: 60px;
             }*/
 
-            @media (max-width: 767px){
-                .p-md-5{
+            @media (max-width: 767px) {
+                .p-md-5 {
                     padding: 20px;
                 }
 
-                #direct-answer-feedback{
+                #direct-answer-feedback {
                     margin-top: 40px;
                 }
             }
 
-            #direct-answer-feedback{
+            #direct-answer-feedback {
                 margin-top: 20px;
-            }
-
-            .yxt-AutoComplete-wrapper {
-                background-color: unset;
-            }
-
-            .yxt-AutoComplete-option {
-                color: #ffffff
-            }
-
-            .yxt-AutoComplete:before {
-                background-color: unset;
-            }
-
-            .yxt-AutoComplete-option--item.yxt-selected,
-            .yxt-AutoComplete-option--item:hover {
-                background-color: #3BB390;
-            }
-
-            .highlight-button {
-                text-align: left;
-                height: 25px;
-                margin-top: -25px;
-            }
-
-            .highlight-button .btn {
-                position: absolute;
-                margin-top: -23px;
-                right: 20px;
             }
 
             .universal-results .card {
                 height: 100%;
-
             }
 
             .universal-results .floating_card {
@@ -1236,15 +1277,15 @@
                 color: #3BB390
             }
 
-            .direct-answer .floating_card{
+            .direct-answer .floating_card {
                 z-index: unset;
             }
 
-            .universal-results .faq .highlight-button{
+            .universal-results .faq .highlight-button {
                 height: unset;
             }
 
-            .universal-results .faq .highlight-button a{
+            .universal-results .faq .highlight-button a {
                 color: unset;
                 margin-left: 20px;
             }
@@ -1253,7 +1294,7 @@
                 color: unset;
             }
 
-            .direct-answers{
+            .direct-answers {
                 display: none;
             }
 
@@ -1280,207 +1321,178 @@
                         <div class="universal-results"></div>
                         <div class="question-submission-container"></div>
                         <script>
-                            var mdconverter = new showdown.Converter();
-                            var api = "42df045ec9096c3b5a91f92c0f7d74e8";
-                            var experienceKey = "2te";
-                            var businessId = "3567538";
-                            var locale = "de";
-
-                            var queryId = "";
-
-                            ANSWERS.init({
-                                apiKey: api,
-                                experienceKey: experienceKey,
-                                businessId: businessId,
-                                experienceVersion: "PRODUCTION",
-                                locale: locale,
-                                onReady: function () {
-                                    var html;
-
-                                    this.addComponent("SearchBar", {
-                                        container: ".search-bar",
-                                        customIconUrl: "https://engstligenalp.ch/wp-content/themes/engstligenalp/assets/img/icons/suche.png"
-                                    });
-
-                                    ANSWERS.addComponent("SpellCheck", {
-                                        container: ".spell-check",
-                                        suggestionHelpText: "Meinten Sie: "
-                                    });
-
-                                    ANSWERS.addComponent('Facets', {
-                                        container: '.facets',
-                                        verticalKey: 'ce_aktivitaet'
-                                    });
-
-                                    /* ANSWERS.addComponent('FilterOptions', {
-                                        container: '.facets',
-                                        control: 'singleoption',
-                                        options: [
-                                            {
-                                                label: 'Winter',
-                                                field: 'c_sowi',
-                                                value: "Winter",
-                                                selected: true
-                                            },
-                                            {
-                                                label: 'Sommer',
-                                                field: 'c_sowi',
-                                                value: "Sommer"
+                            function Answerconfig(){
+                                var html;
+                    
+                                ANSWERS.addComponent("SearchBar", {
+                                    container: ".search-bar",
+                                    customIconUrl: "https://engstligenalp.ch/wp-content/themes/engstligenalp/assets/img/icons/suche.png",
+                                    name: "search-bar",
+                                });
+                    
+                                ANSWERS.addComponent("SpellCheck", {
+                                    container: ".spell-check",
+                                    suggestionHelpText: "Meinten Sie: "
+                                });
+                    
+                                ANSWERS.addComponent('Facets', {
+                                    container: '.facets',
+                                    verticalKey: 'ce_aktivitaet'
+                                });
+                    
+                                ANSWERS.addComponent("DirectAnswer", {
+                                    container: ".direct-answers"
+                                });
+                    
+                                ANSWERS.addComponent("DirectAnswer", {
+                                    container: ".direct-answer",
+                                    render: function (data) {
+                                        qayext = '<div id="direct-answer-feedback">Ist die Schnellantwort hifreich? <i class="faq_icons_small yextAnalyticFeedback icthumbsup js-customDirectAnswer-thumbsUpIcon" eventType="THUMBS_UP" verticalKey="' +
+                                            data.relatedItem.verticalConfigId +
+                                            '" entityId="' +
+                                            data.relatedItem.data.id +
+                                            '"></i> <i class="faq_icons_small yextAnalyticFeedback icthumbsdown js-customDirectAnswer-thumbsDownIcon" eventType="THUMBS_DOWN" verticalKey="' +
+                                            data.relatedItem.verticalConfigId +
+                                            '" entityId="' +
+                                            data.relatedItem.data.id +
+                                            '"></i></div><br>';
+                    
+                                        html = '<div class="row"><h2 class="mt-4 heading">Schnellantwort</h2>';
+                                        if (data.answer.fieldApiName == "address") {
+                                            html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
+                                                data.answer.entityName +
+                                                ' Adresse</h2><p>' +
+                                                data.answer.value.line1 +
+                                                "<br>" +
+                                                data.answer.value.postalCode +
+                                                " " +
+                                                data.answer.value.city +
+                                                '</p></div></div></div>';
+                                        }
+                    
+                                        if (data.answer.fieldApiName == "mainPhone") {
+                                            html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
+                                                data.answer.entityName +
+                                                ' Telefon</h2><p>' +
+                                                data.answer.value.replace(/^(\+41)([0-9]{2})([0-9]{3})([0-9]{2})([0-9]{2})/g, '0$2 $3 $4 $5') +
+                                                '</p></div>' +
+                                                '</div><div class="highlight-button"><a href="tel:' +
+                                                data.answer.value +
+                                                '" class="btn btn-success btn-rounded">Anrufen</a></div>';
+                                        }
+                    
+                                        if (data.answer.fieldApiName == "c_preisAb") {
+                                            html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
+                                                data.answer.entityName +
+                                                ' Preis</h2><div class="p-d-5"><p>ab ' +
+                                                parseFloat(data.answer.value).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,').replace(/.[0]{2}/g, '') +
+                                                ' Fr.</p></div></div></div><div class="highlight-button"><a href="' +
+                                                data.relatedItem.data.fieldValues.landingPageUrl +
+                                                '" class="btn btn-success btn-rounded">Mehr Informationen</a></div>';
+                                        }
+                    
+                                        if (data.answer.fieldApiName == "emails") {
+                                            html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
+                                                data.answer.entityName +
+                                                ' E-Mail</h2><div class="p-d-5"><p>' +
+                                                data.answer.value[0] +
+                                                '</p></div></div></div><div class="highlight-button"><a href="mailto:' +
+                                                data.answer.value[0] +
+                                                '" class="btn btn-success btn-rounded">E-Mail senden</a></div>';
+                                        }
+                    
+                                        if (data.answer.fieldApiName == "emails") {
+                                            html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
+                                                data.answer.entityName +
+                                                ' E-Mail</h2><div class="p-d-5"><p>' +
+                                                data.answer.value[0] +
+                                                '</p></div></div></div><div class="highlight-button"><a href="mailto:' +
+                                                data.answer.value[0] +
+                                                '" class="btn btn-success btn-rounded">E-Mail senden</a></div>';
+                                        }
+                    
+                                        if (data.answer.fieldApiName == "c_beschreibung_Rich") {
+                                            html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
+                                                data.answer.entityName +
+                                                ' Beschreibung</h2><div class="p-d-5"><p>' +
+                                                mdconverter.makeHtml(data.answer.value) +
+                                                '</p></div></div></div><div class="highlight-button"><a href="' +
+                                                data.relatedItem.data.fieldValues.landingPageUrl +
+                                                '" class="btn btn-success btn-rounded">Mehr Informationen</a></div>';
+                                        }
+                    
+                                        if (data.relatedItem.verticalConfigId == "standorte") {
+                                            html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="row justify-content-start"><div class="col-sm-3"><img style="width: 100%; border-radius: 20px 0px 0px 20px;" src="' +
+                                                data.relatedItem.data.fieldValues.c_hauptbild.url +
+                                                '"></div><div class="col-sm-6"><h2 style="margin-top:100px">' +
+                                                data.relatedItem.data.fieldValues.name +
+                                                '</h2></div></div></div><div class="highlight-button"><a href="' +
+                                                data.relatedItem.data.fieldValues.websiteUrl.url +
+                                                '" class="btn btn-success btn-rounded">Mehr Informationen</a></div>';
+                                        }
+                    
+                                        if (data.relatedItem.verticalConfigId == "events") {
+                                            html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="row justify-content-start"><div class="col-sm-3"><img style="width: 100%; border-radius: 20px 0px 0px 20px;" src="' +
+                                                data.relatedItem.data.fieldValues.c_hauptbild.url +
+                                                '"></div><div class="col-sm-6"><h2 style="margin-top:50px">' +
+                                                data.relatedItem.data.fieldValues.name +
+                                                '</h2><br><p>';
+                                            if (data.relatedItem.data.fieldValues.time.start != undefined) {
+                                                html += data.relatedItem.data.fieldValues.time.start.replace(/([0-9]{4})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})/, "$5.$3.$1 $7:$9 Uhr");
                                             }
-                                        ]
-                                    });
-                                    */
-                                    this.addComponent("DirectAnswer", {
-                                        container: ".direct-answers"
-                                    });
-
-                                    this.addComponent("DirectAnswer", {
-                                        container: ".direct-answer",
-                                        render: function (data) {
-                                            qayext = '<div id="direct-answer-feedback">Ist die Schnellantwort hifreich? <i class="faq_icons_small yextAnalyticFeedback icthumbsup js-customDirectAnswer-thumbsUpIcon" eventType="THUMBS_UP" verticalKey="' +
-                                                data.relatedItem.verticalConfigId +
-                                                '" entityId="' +
+                                            if (data.relatedItem.data.fieldValues.time.end != undefined) {
+                                                html += ' - ';
+                                                html += data.relatedItem.data.fieldValues.time.end.replace(/([0-9]{4})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})/, "$5.$3.$1 $7:$9 Uhr");
+                                            }
+                                            html += '</p></div></div></div><div class="highlight-button"><a href="https://engstligenalp.ch/sommer/erleben/events/?event=' +
                                                 data.relatedItem.data.id +
-                                                '"></i> <i class="faq_icons_small yextAnalyticFeedback icthumbsdown js-customDirectAnswer-thumbsDownIcon" eventType="THUMBS_DOWN" verticalKey="' +
-                                                data.relatedItem.verticalConfigId +
-                                                '" entityId="' +
-                                                data.relatedItem.data.id +
-                                                '"></i></div><br>';
-
-                                            html = '<div class="row"><h2 class="mt-4 heading">Schnellantwort</h2>';
-                                            if (data.answer.fieldApiName == "address") {
-                                                html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
-                                                    data.answer.entityName +
-                                                    ' Adresse</h2><p>' +
-                                                    data.answer.value.line1 +
-                                                    "<br>" +
-                                                    data.answer.value.postalCode +
-                                                    " " +
-                                                    data.answer.value.city +
-                                                    '</p></div></div></div>';
-                                            }
-
-                                            if (data.answer.fieldApiName == "mainPhone") {
-                                                html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
-                                                    data.answer.entityName +
-                                                    ' Telefon</h2><p>' +
-                                                    data.answer.value.replace(/^(\+41)([0-9]{2})([0-9]{3})([0-9]{2})([0-9]{2})/g, '0$2 $3 $4 $5') +
-                                                    '</p></div>' +
-                                                    '</div><div class="highlight-button"><a href="tel:' +
-                                                    data.answer.value +
-                                                    '" class="btn btn-success btn-rounded">Anrufen</a></div>';
-                                            }
-
-                                            if (data.answer.fieldApiName == "c_preisAb") {
-                                                html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
-                                                    data.answer.entityName +
-                                                    ' Preis</h2><div class="p-d-5"><p>ab ' +
-                                                    parseFloat(data.answer.value).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,').replace(/.[0]{2}/g, '') +
-                                                    ' Fr.</p></div></div></div><div class="highlight-button"><a href="' +
-                                                    data.relatedItem.data.fieldValues.landingPageUrl +
-                                                    '" class="btn btn-success btn-rounded">Mehr Informationen</a></div>';
-                                            }
-
-                                            if (data.answer.fieldApiName == "emails") {
-                                                html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
-                                                    data.answer.entityName +
-                                                    ' E-Mail</h2><div class="p-d-5"><p>' +
-                                                    data.answer.value[0] +
-                                                    '</p></div></div></div><div class="highlight-button"><a href="mailto:' +
-                                                    data.answer.value[0] +
-                                                    '" class="btn btn-success btn-rounded">E-Mail senden</a></div>';
-                                            }
-
-                                            if (data.answer.fieldApiName == "emails") {
-                                                html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
-                                                    data.answer.entityName +
-                                                    ' E-Mail</h2><div class="p-d-5"><p>' +
-                                                    data.answer.value[0] +
-                                                    '</p></div></div></div><div class="highlight-button"><a href="mailto:' +
-                                                    data.answer.value[0] +
-                                                    '" class="btn btn-success btn-rounded">E-Mail senden</a></div>';
-                                            }
-
-                                            if (data.answer.fieldApiName == "c_beschreibung_Rich") {
-                                                html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
-                                                    data.answer.entityName +
-                                                    ' Beschreibung</h2><div class="p-d-5"><p>' +
-                                                    mdconverter.makeHtml(data.answer.value) +
-                                                    '</p></div></div></div><div class="highlight-button"><a href="' +
-                                                    data.relatedItem.data.fieldValues.landingPageUrl +
-                                                    '" class="btn btn-success btn-rounded">Mehr Informationen</a></div>';
-                                            }
-
-                                            if (data.relatedItem.verticalConfigId == "standorte") {
-                                                html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="row justify-content-start"><div class="col-sm-3"><img style="width: 100%; border-radius: 20px 0px 0px 20px;" src="' +
-                                                    data.relatedItem.data.fieldValues.c_hauptbild.url +
-                                                    '"></div><div class="col-sm-6"><h2 style="margin-top:100px">' +
-                                                    data.relatedItem.data.fieldValues.name +
-                                                    '</h2></div></div></div><div class="highlight-button"><a href="' +
-                                                    data.relatedItem.data.fieldValues.websiteUrl.url +
-                                                    '" class="btn btn-success btn-rounded">Mehr Informationen</a></div>';
-                                            }
-
-                                            if (data.relatedItem.verticalConfigId == "events") {
-                                                html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="row justify-content-start"><div class="col-sm-3"><img style="width: 100%; border-radius: 20px 0px 0px 20px;" src="' +
-                                                    data.relatedItem.data.fieldValues.c_hauptbild.url +
-                                                    '"></div><div class="col-sm-6"><h2 style="margin-top:50px">' +
-                                                    data.relatedItem.data.fieldValues.name +
-                                                    '</h2><br><p>';
-                                                if (data.relatedItem.data.fieldValues.time.start != undefined) {
-                                                    html += data.relatedItem.data.fieldValues.time.start.replace(/([0-9]{4})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})/, "$5.$3.$1 $7:$9 Uhr");
-                                                }
-                                                if (data.relatedItem.data.fieldValues.time.end != undefined) {
-                                                    html += ' - ';
-                                                    html += data.relatedItem.data.fieldValues.time.end.replace(/([0-9]{4})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})(.)([0-9]{2})/, "$5.$3.$1 $7:$9 Uhr");
-                                                }
-                                                html += '</p></div></div></div><div class="highlight-button"><a href="https://engstligenalp.ch/sommer/erleben/events/?event=' +
-                                                    data.relatedItem.data.id +
-                                                    '" class="btn btn-success btn-rounded">Mehr Informationen</a></div>';
-                                            }
-
-                                            if (data.relatedItem.verticalConfigId == "häufig_gestellte_fragen") {
-                                                html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
-                                                    data.relatedItem.data.fieldValues.question +
-                                                    '</h2><div class="p-d-5"><p>';
-                                                htmlfaq = mdconverter.makeHtml(data.relatedItem.data.fieldValues.answer);
-
-                                                htmlfaq = htmlfaq.replace("{!WEBCAM_1!}", '<img src="https://engstligenalp.ch/webcam/livecam.jpg" width="100%"><br><br>');
-                                                htmlfaq = htmlfaq.replace("{!WETTER!}", '<div class="blockMeteo"></div>');
-
-                                                html += htmlfaq;
-
-                                                if(data.relatedItem.data.fieldValues.c_buttonHref != undefined){
+                                                '" class="btn btn-success btn-rounded">Mehr Informationen</a></div>';
+                                        }
+                    
+                                        if (data.relatedItem.verticalConfigId == "häufig_gestellte_fragen") {
+                                            html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
+                                                data.relatedItem.data.fieldValues.question +
+                                                '</h2><div class="p-d-5"><p>';
+                                            htmlfaq = mdconverter.makeHtml(data.relatedItem.data.fieldValues.answer);
+                    
+                                            htmlfaq = htmlfaq.replace("{!WEBCAM_1!}", '<img src="https://engstligenalp.ch/webcam/livecam.jpg" width="100%"><br><br>');
+                                            htmlfaq = htmlfaq.replace("{!WETTER!}", '<div class="blockMeteo"></div>');
+                    
+                                            html += htmlfaq;
+                    
+                                            if (data.relatedItem.data.fieldValues.c_buttonHref != undefined) {
                                                 html += '</p></div></div></div><div class="highlight-button"><a href="' +
                                                     data.relatedItem.data.fieldValues.c_buttonHref +
                                                     '" class="btn btn-success btn-rounded">' +
                                                     data.relatedItem.data.fieldValues.c_buttonTitel +
                                                     '</a></div>';
-                                                }else{
-                                                    html += '</p></div></div></div>';
-                                                }
+                                            } else {
+                                                html += '</p></div></div></div>';
                                             }
-
-                                            html += `</div>`+ qayext + `</div>`;
-
-
-                                            return html;
                                         }
-                                    });
-
-                                    this.addComponent("UniversalResults", {
-                                        container: ".universal-results",
-                                        render: function (data) {
-                                            html = "";
-                                            if (data.isSearchComplete) {
-                                                i = 0;
+                    
+                                        html += `</div>` + qayext + `</div>`;
+                    
+                    
+                                        return html;
+                                    }
+                                });
+                    
+                                ANSWERS.addComponent("UniversalResults", {
+                                    container: ".universal-results",
+                                    render: function (data) {
+                                        html = "";
+                                        if (data.isSearchComplete) {
+                                            i = 0;
+                                            console.log(data.sections.length)
+                                            if (data.sections.length != 0){
                                                 while (data.sections[i]) {
                                                     html += '<div class="row">';
-
+                        
                                                     /*
                                                         Produkte
                                                     */
-
+                        
                                                     if (data.sections[i].verticalConfigId == "produkte") {
                                                         html += '<h2 class="mt-4 heading">Produkte</h2>';
                                                         ii = 0;
@@ -1525,11 +1537,11 @@
                                                             ii++;
                                                         }
                                                     }
-
+                        
                                                     /*
                                                         Standorte
                                                     */
-
+                        
                                                     if (data.sections[i].verticalConfigId == "standorte") {
                                                         html += '<h2 class="mt-4 heading">Locations</h2>';
                                                         ii = 0;
@@ -1566,11 +1578,11 @@
                                                             ii++;
                                                         }
                                                     }
-
+                        
                                                     /*
                                                         Jobs
                                                     */
-
+                        
                                                     if (data.sections[i].verticalConfigId == "jobs") {
                                                         html += '<h2 class="mt-4 heading">Jobs</h2>';
                                                         ii = 0;
@@ -1587,11 +1599,11 @@
                                                             ii++;
                                                         }
                                                     }
-
+                        
                                                     /*
                                                         Aktivitäten
                                                     */
-
+                        
                                                     if (data.sections[i].verticalConfigId == "aktivitäten") {
                                                         html += '<h2 class="mt-4 heading">Aktivitäten</h2>';
                                                         ii = 0;
@@ -1618,11 +1630,11 @@
                                                             ii++;
                                                         }
                                                     }
-
+                        
                                                     /*
                                                         FAQ
                                                     */
-
+                        
                                                     if (data.sections[i].verticalConfigId == "häufig_gestellte_fragen") {
                                                         html += '<div class="faq"><h2 class="mt-4 heading">FAQ</h2><div class="faq-list"><ul>';
                                                         ii = 0;
@@ -1630,19 +1642,19 @@
                                                             html += '<li class="faq_item"><div data-bs-toggle="collapse" class="collapse f_bold collapsed" data-bs-target="#faq-list-' + data.sections[i].results[ii]._raw.id + '">' + data.sections[i].results[ii]._raw.question +
                                                                 '<i class="bx bx-plus icon-show"></i><i class="bx bx-minus icon-close"></i></div><div id="faq-list-' + data.sections[i].results[ii]._raw.id +
                                                                 '" class="collapse" data-bs-parent=".faq-list-' + data.sections[i].results[ii]._raw.id + '">';
-
+                        
                                                             if (data.sections[i].results[ii]._raw.answer != undefined) {
                                                                 htmlfaq = mdconverter.makeHtml(data.sections[i].results[ii]._raw.answer);
-
+                        
                                                                 htmlfaq = htmlfaq.replace("{!WEBCAM_1!}", '<img src="https://engstligenalp.ch/webcam/livecam.jpg" width="100%"><br><br>');
-
+                        
                                                                 htmlfaq = htmlfaq.replace("{!WETTER!}", '<div class="blockMeteo"></div>');
-
+                        
                                                                 runwetter();
-
+                        
                                                                 html += htmlfaq;
                                                             }
-
+                        
                                                             if (data.sections[i].results[ii]._raw.c_buttonHref != undefined) {
                                                                 html += '<div class="highlight-button"><a href="' +
                                                                     data.sections[i].results[ii]._raw.c_buttonHref +
@@ -1650,18 +1662,18 @@
                                                                     data.sections[i].results[ii]._raw.c_buttonTitel +
                                                                     '</a></div>';
                                                             }
-
-
+                        
+                        
                                                             html += '</div></li>';
                                                             ii++;
                                                         }
                                                         html += '</ul></div></div>';
                                                     }
-
+                        
                                                     /*
                                                         Events
                                                     */
-
+                        
                                                     if (data.sections[i].verticalConfigId == "events") {
                                                         html += '<h2 class="mt-4 heading">Events</h2>';
                                                         ii = 0;
@@ -1692,84 +1704,52 @@
                                                     i++;
                                                 }
                                                 html += "</div>";
-                                                //html += "<p><br><br>" + data.queryId + "<br><br>" + JSON.stringify(data) + "</p>";
-                                                console.log(data);
-                                                queryId = data.queryId;
+                                            } else {
+                                                html += "<img src=\"https://engstligenalp.ch/wp-content/themes/engstligenalp/assets/img/undraw_no_data_re_kwbl.svg\" width=\"400px\" height=\"auto\" style=\"margin-left: 50%; margin-top: 150px; left: -200px; position: relative;\"><br><br><h2 style=\"margin-top: 100px; width: 100%; text-align: center;\">Leider nix gefunden.</h2>";
                                             }
-                                            return html;
-
-                                           
+                                            //html += "<p><br><br>" + data.queryId + "<br><br>" + JSON.stringify(data) + "</p>";
+                                            console.log(data);
+                                            queryId = data.queryId;
                                         }
+                                        return html;
+                    
+                    
+                                    }
+                                });
+                    
+                    
+                                var url = `https://liveapi.yext.com/v2/accounts/me/answers/autocomplete`;
+                                url += `?v=20180204`;
+                                url += `&api_key=` + api;
+                                url += `&sessionTrackingEnabled=false`;
+                                url += `&experienceKey=` + experienceKey;
+                                url += `&input=`;
+                                url += `&version=STAGING`;
+                                url += `&locale=` + locale;
+                    
+                                axios.get(url).then(function (response) {
+                                    // Get strings from response
+                                    const strings = response.data.response.results.map(function (r) {
+                                        return r.value;
                                     });
-
-
-                                    var url = `https://liveapi.yext.com/v2/accounts/me/answers/autocomplete`;
-                                    url += `?v=20180204`;
-                                    url += `&api_key=` + api;
-                                    url += `&sessionTrackingEnabled=false`;
-                                    url += `&experienceKey=` + experienceKey;
-                                    url += `&input=`;
-                                    url += `&version=STAGING`;
-                                    url += `&locale=` + locale;
-
-                                    axios.get(url).then(function (response) {
-                                        // Get strings from response
-                                        const strings = response.data.response.results.map(function (r) {
-                                            return r.value;
-                                        });
-
-                                        // Set up Typed
-                                        var options = {
-                                            strings,
-                                            showCursor: true,
-                                            cursorChar: "|",
-                                            typeSpeed: 45,
-                                            backSpeed: 20,
-                                            smartBackspace: true,
-                                            loop: true,
-                                            startDelay: 500,
-                                            backDelay: 2000,
-                                            attr: "placeholder",
-                                        };
-
-                                        var typed = new Typed(".js-yext-query", options);
-                                    });
-                                }, onUniversalSearch: function (searchParams) {
-                                    console.log(queryId);
-                                    jQuery(".yextAnalyticClick").click(function () {
-                                        jQuery.post("https://answers.yext-pixel.com/realtimeanalytics/data/answers/3567538", {
-                                            eventType: jQuery(this).attr("eventType"),
-                                            verticalKey: jQuery(this).attr("verticalKey"),
-                                            entityId: jQuery(this).attr("entityId"),
-                                            queryId: queryId,
-                                            searcher: "UNIVERSAL",
-                                            experienceKey: "sommer",
-                                            experienceVersion: "PRODUCTION"
-                                        }, function (data, status) {
-                                            console.log(data);
-                                            console.log(status);
-                                        })
-                                    })
-
-                                    jQuery(".yextAnalyticFeedback").click(function () {
-                                        jQuery.post("https://answers.yext-pixel.com/realtimeanalytics/data/answers/3567538", {
-                                            eventType: jQuery(this).attr("eventType"),
-                                            verticalKey: jQuery(this).attr("verticalKey"),
-                                            entityId: jQuery(this).attr("entityId"),
-                                            queryId: queryId,
-                                            directAnswer: true,
-                                            searcher: "UNIVERSAL",
-                                            experienceKey: "sommer",
-                                            experienceVersion: "PRODUCTION"
-                                        }, function (data, status) {
-                                            console.log(data);
-                                            console.log(status);
-                                            $(".yextAnalyticFeedback").html("<p>Vielen Dank fürs Feedback</p>")
-                                        })
-                                    })
-                                    //setTimeout(mapSommer(), 50000);
-                                }
-                            });
+                    
+                                    // Set up Typed
+                                    var options = {
+                                        strings,
+                                        showCursor: true,
+                                        cursorChar: "|",
+                                        typeSpeed: 45,
+                                        backSpeed: 20,
+                                        smartBackspace: true,
+                                        loop: true,
+                                        startDelay: 500,
+                                        backDelay: 2000,
+                                        attr: "placeholder",
+                                    };
+                    
+                                    var typed = new Typed(".search-bar .js-yext-query", options);
+                                });
+                            }
                         </script>
                     </div>
                 </div>
@@ -1865,7 +1845,7 @@
         function runwetter() {
 
             jQuery.getJSON('https://engstligenalp.ch/wp-content/infosnow/sommer.json', function (data) {
-            //jQuery.getJSON('sommer.json', function (data) {
+                //jQuery.getJSON('sommer.json', function (data) {
                 var i = 0;
                 wetter = data.Resort.ElementGroup.filter(x => x["@attributes"].name === "METEOSRF")[0].Element.Forecast;
                 wetterHtml = '';
@@ -2297,12 +2277,105 @@
 
 
     <div class="modal fade" id="modal_search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
         <div class="modal-dialog modal-dialog-centered search__modal">
-
+            <div class="modal-content">
+                <div class="search-bar-ref"></div>
+            </div>
         </div>
-
     </div>
+    <script>
+		var mdconverter = new showdown.Converter();
+		var api = "42df045ec9096c3b5a91f92c0f7d74e8";
+		var experienceKey = "2te";
+		var businessId = "3567538";
+		var locale = "de";
+
+		var queryId = "";
+
+		ANSWERS.init({
+			apiKey: api,
+			experienceKey: experienceKey,
+			businessId: businessId,
+			experienceVersion: "PRODUCTION",
+			locale: locale,
+			onReady: function () {
+				this.addComponent("SearchBar", {
+					container: ".search-bar-ref",
+					customIconUrl: "https://engstligenalp.ch/wp-content/themes/engstligenalp/assets/img/icons/suche.png",
+					name: "search-bar-ref",
+					redirectUrl: "https://engstligenalp.ch/suche/"
+				});
+
+				Answerconfig();
+
+				var url = `https://liveapi.yext.com/v2/accounts/me/answers/autocomplete`;
+				url += `?v=20180204`;
+				url += `&api_key=` + api;
+				url += `&sessionTrackingEnabled=false`;
+				url += `&experienceKey=` + experienceKey;
+				url += `&input=`;
+				url += `&version=STAGING`;
+				url += `&locale=` + locale;
+
+				axios.get(url).then(function (response) {
+					// Get strings from response
+					const strings = response.data.response.results.map(function (r) {
+						return r.value;
+					});
+
+					// Set up Typed
+					var options = {
+						strings,
+						showCursor: true,
+						cursorChar: "|",
+						typeSpeed: 45,
+						backSpeed: 20,
+						smartBackspace: true,
+						loop: true,
+						startDelay: 500,
+						backDelay: 2000,
+						attr: "placeholder",
+					};
+
+					var typed = new Typed(".search-bar-ref .js-yext-query", options);
+				});
+			},
+			onUniversalSearch: function (searchParams) {
+				console.log(queryId);
+				jQuery(".yextAnalyticClick").click(function () {
+					jQuery.post("https://answers.yext-pixel.com/realtimeanalytics/data/answers/3567538", {
+						eventType: jQuery(this).attr("eventType"),
+						verticalKey: jQuery(this).attr("verticalKey"),
+						entityId: jQuery(this).attr("entityId"),
+						queryId: queryId,
+						searcher: "UNIVERSAL",
+						experienceKey: "sommer",
+						experienceVersion: "PRODUCTION"
+					}, function (data, status) {
+						console.log(data);
+						console.log(status);
+					})
+				})
+
+				jQuery(".yextAnalyticFeedback").click(function () {
+					jQuery.post("https://answers.yext-pixel.com/realtimeanalytics/data/answers/3567538", {
+						eventType: jQuery(this).attr("eventType"),
+						verticalKey: jQuery(this).attr("verticalKey"),
+						entityId: jQuery(this).attr("entityId"),
+						queryId: queryId,
+						directAnswer: true,
+						searcher: "UNIVERSAL",
+						experienceKey: "sommer",
+						experienceVersion: "PRODUCTION"
+					}, function (data, status) {
+						console.log(data);
+						console.log(status);
+						$(".yextAnalyticFeedback").html("<p>Vielen Dank fürs Feedback</p>")
+					})
+				})
+			}
+		});
+	</script>
 
 
 

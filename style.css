@@ -3240,7 +3240,6 @@ section {
 .search__modal button{
 	height: 70px;
 	padding: 0 15px;
-    position: absolute !important;
     right: 0;
     top: 0;
     bottom: 0;
