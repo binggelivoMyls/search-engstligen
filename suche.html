@@ -1060,6 +1060,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <link rel="stylesheet" type="text/css" href="https://assets.sitescdn.net/answers/v1/answers.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
     <section class="full_grid text-light">
         <!-- Style Wetter -->
         <style>
@@ -1278,7 +1279,6 @@
                         <div class="direct-answer"></div>
                         <div class="universal-results"></div>
                         <div class="question-submission-container"></div>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
                         <script>
                             var mdconverter = new showdown.Converter();
                             var api = "42df045ec9096c3b5a91f92c0f7d74e8";
@@ -1312,7 +1312,7 @@
                                         verticalKey: 'ce_aktivitaet'
                                     });
 
-                                   /* ANSWERS.addComponent('FilterOptions', {
+                                    /* ANSWERS.addComponent('FilterOptions', {
                                         container: '.facets',
                                         control: 'singleoption',
                                         options: [
@@ -1329,7 +1329,7 @@
                                             }
                                         ]
                                     });
-*/
+                                    */
                                     this.addComponent("DirectAnswer", {
                                         container: ".direct-answers"
                                     });
@@ -1375,7 +1375,7 @@
                                                 html += '<div class="col-lg-12 floating_card content mt-4"><div class="card"><div class="p-md-5"><h2 class="">' +
                                                     data.answer.entityName +
                                                     ' Preis</h2><div class="p-d-5"><p>ab ' +
-                                                    parseFloat(data.answer.value).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,').replace(/[0]{2}/g, '-') +
+                                                    parseFloat(data.answer.value).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,').replace(/.[0]{2}/g, '') +
                                                     ' Fr.</p></div></div></div><div class="highlight-button"><a href="' +
                                                     data.relatedItem.data.fieldValues.landingPageUrl +
                                                     '" class="btn btn-success btn-rounded">Mehr Informationen</a></div>';
@@ -1514,7 +1514,8 @@
                                                                 html += data.sections[i].results[ii]._raw.landingPageUrl;
                                                                 html += '" class="btn btn-success btn-rounded">';
                                                                 if (data.sections[i].results[ii]._raw.c_preisAb != undefined) {
-                                                                    html += 'Ab ' + parseFloat(data.sections[i].results[ii]._raw.c_preisAb).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,').replace(/[0]{2}/g, '-') + ' Fr.';
+                                                                    console.log(data.sections[i].results[ii]._raw.c_preisAb);
+                                                                    html += 'ab ' + parseFloat(data.sections[i].results[ii]._raw.c_preisAb).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,').replace(/.[0]{2}/g, '') + ' Fr.';
                                                                 } else {
                                                                     html += '';
                                                                 }
@@ -1630,15 +1631,17 @@
                                                                 '<i class="bx bx-plus icon-show"></i><i class="bx bx-minus icon-close"></i></div><div id="faq-list-' + data.sections[i].results[ii]._raw.id +
                                                                 '" class="collapse" data-bs-parent=".faq-list-' + data.sections[i].results[ii]._raw.id + '">';
 
-                                                            htmlfaq = mdconverter.makeHtml(data.sections[i].results[ii]._raw.answer);
+                                                            if (data.sections[i].results[ii]._raw.answer != undefined) {
+                                                                htmlfaq = mdconverter.makeHtml(data.sections[i].results[ii]._raw.answer);
 
-                                                            htmlfaq = htmlfaq.replace("{!WEBCAM_1!}", '<img src="https://engstligenalp.ch/webcam/livecam.jpg" width="100%"><br><br>');
+                                                                htmlfaq = htmlfaq.replace("{!WEBCAM_1!}", '<img src="https://engstligenalp.ch/webcam/livecam.jpg" width="100%"><br><br>');
 
-                                                            htmlfaq = htmlfaq.replace("{!WETTER!}", '<div class="blockMeteo"></div>');
+                                                                htmlfaq = htmlfaq.replace("{!WETTER!}", '<div class="blockMeteo"></div>');
 
-                                                            runwetter();
+                                                                runwetter();
 
-                                                            html += htmlfaq;
+                                                                html += htmlfaq;
+                                                            }
 
                                                             if (data.sections[i].results[ii]._raw.c_buttonHref != undefined) {
                                                                 html += '<div class="highlight-button"><a href="' +
