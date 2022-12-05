@@ -1386,7 +1386,7 @@
                                                 data.answer.entityName +
                                                 ' Preis</h2><div class="p-d-5"><p>ab ' +
                                                 parseFloat(data.answer.value).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,').replace(/.[0]{2}/g, '') +
-                                                ' Fr.</p></div></div></div><div class="highlight-button"><a href="' +
+                                                ' CHF</p></div></div></div><div class="highlight-button"><a href="' +
                                                 data.relatedItem.data.fieldValues.landingPageUrl +
                                                 '" class="btn btn-success btn-rounded">Mehr Informationen</a></div>';
                                         }
@@ -1527,7 +1527,7 @@
                                                                 html += '" class="btn btn-success btn-rounded">';
                                                                 if (data.sections[i].results[ii]._raw.c_preisAb != undefined) {
                                                                     console.log(data.sections[i].results[ii]._raw.c_preisAb);
-                                                                    html += 'ab ' + parseFloat(data.sections[i].results[ii]._raw.c_preisAb).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,').replace(/.[0]{2}/g, '') + ' Fr.';
+                                                                    html += 'ab ' + parseFloat(data.sections[i].results[ii]._raw.c_preisAb).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,').replace(/.[0]{2}/g, '') + ' CHF';
                                                                 } else {
                                                                     html += '';
                                                                 }
